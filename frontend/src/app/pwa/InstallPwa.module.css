@@ -1,0 +1,35 @@
+.installButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  min-block-size: 3rem;
+  padding: var(--space-1) var(--space-3);
+  color: var(--color-nieve);
+  background: var(--color-totora);
+  border: 2px solid var(--color-tierra);
+  border-radius: var(--radio);
+  box-shadow: 0 2px 0 var(--color-tierra);
+  font-size: var(--size-pequeno);
+  font-weight: 700;
+  transition:
+    transform 0.15s ease,
+    background-color 0.2s ease;
+}
+
+.installButton:active {
+  transform: translateY(2px) scale(0.98);
+  box-shadow: none;
+}
+
+.icon {
+  inline-size: 1.35rem;
+  block-size: 1.35rem;
+  flex: none;
+}
+
+.compact {
+  min-block-size: 2.75rem;
+  padding: var(--space-1) var(--space-2);
+  box-shadow: none;
+}
